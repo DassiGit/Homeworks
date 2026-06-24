@@ -13,3 +13,10 @@ a{
     font-size: 1.5em;
     text-align: center;
 }
+a.brown {
+color: brown;
+
+}
+a.brown:hover{
+    color: green;
+}

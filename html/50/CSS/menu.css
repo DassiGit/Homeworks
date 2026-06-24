@@ -1,13 +1,28 @@
 h5{
-    background-color:beige;
+    background-color: cornsilk;
     font-size: 1.5em;
     font-family: cursive;
     text-align: center;
+
 }
 p{
     text-align: left;
+    margin-bottom: 0;
 }
 div{
     text-align: left;
-    color: navy;
+    color: brown;
+    margin-top: none;
+    margin-bottom: 2em;
 }
+/*header{
+    background-color: green;
+}
+a{
+    color: honeydew;
+}*/
+ul{
+    list-style: none;
+    font-size: 1.3em;
+}
+
