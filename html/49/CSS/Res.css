@@ -1,5 +1,9 @@
 header{
 text-align: center;  
+border-bottom: 2px solid Black;
+background-color: honeydew;
+padding: 10px;
+margin:0;
 }
 
 h1{
@@ -11,10 +15,21 @@ h1{
 h2{
 font-family:Georgia, 'Times New Roman', Times, serif;
 font-size: 1.2em;
+
 }
 a{
     font-size: 1.2em;
+    color: green;
+    text-decoration: none;
     
+}
+nav{
+    margin:  1em;
+}
+body{
+    margin: auto;
+    background-color:cornsilk;
+    width: 850px;
 }
 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -32,6 +47,8 @@ h3{
 }*/
 img{
     width: 300px;
+    border-radius: 25px;
+    height: 225px;
 }
 div{
     text-align: center;
@@ -46,3 +63,16 @@ h5{
     font-family: cursive;
     text-align: center;
 }
+a.storyClick{
+    color:black;
+    text-decoration: none;
+}
+a.storyClick:visited{
+    color: black;
+}
+ a:hover,a.storyClick:hover  {
+    color: brown;
+
+}
+
+
