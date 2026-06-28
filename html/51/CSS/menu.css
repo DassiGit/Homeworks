@@ -1,0 +1,36 @@
+h5{
+    background-color: cornsilk;
+    font-size: 1.5em;
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 3px brown;
+
+
+}
+p{
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+div{
+    text-align: left;
+    color: brown;
+    margin-top: none;
+    margin-bottom: 2em;
+}
+div:hover{
+    scale: 1.5 1.5;
+}
+/*header{
+    background-color: green;
+}
+a{
+    color: honeydew;
+}*/
+ul{
+    list-style: none;
+    font-size: 1.3em;
+}
+
