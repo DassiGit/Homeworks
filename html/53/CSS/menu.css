@@ -1,0 +1,157 @@
+@import url(Res.css);
+
+@media (max-width: 800px) { 
+    body {
+         display: block; 
+         width: 100%; 
+         text-align: center; 
+         text-align: center;
+        }
+    header{
+
+        text-align: center;
+    }
+}
+
+h5{
+    background-color: cornsilk;
+    font-size: 1.5em;
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 3px brown;
+
+
+}
+body{
+    padding-bottom: 6em;
+}
+.menu{
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+div{
+    text-align: left;
+    color: brown;
+    margin-top: none;
+    margin-bottom: 2em;
+}
+div:hover{
+    scale: 1.5 1.5;
+}
+/*header{
+    background-color: green;
+}
+a{
+    color: honeydew;
+}*/
+ul{
+    list-style: none;
+    font-size: 1.3em;
+}
+
+nav{
+
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+#Order, #popup > p:last-child{
+    border: 1px solid tan ;
+    padding: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    color: brown;
+}
+#Order:hover,
+#popup > p:last-child:hover{
+    background-color: green;
+    color: black;
+    border: 0px;
+}
+h1{
+        margin-top: 1.3em;
+}
+
+section{
+    display:none;
+}
+section:target{
+
+    display:block;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    color: brown;
+}
+
+section img{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+}
+
+section img:hover{
+    filter: brightness(1.4);
+}
+
+section > ol{
+            list-style: none;
+            text-align:left;        
+            
+}
+section > ol > li {
+     font-size: 2em;
+}
+section > ol > li > ol {
+    font-size: .7em;
+}
+section p:first-of-type{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: 1.5px dotted green;
+}
+
+ol[id^="item"] > li{
+    padding: 4px;
+}
+
+#popup > p:last-child{
+    font-size: 2em;
+    border-radius: 20px;
+    padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#popup > p:last-child:hover{
+    cursor: grab;
+}
+
+
+
+
+
+
+
