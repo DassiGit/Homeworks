@@ -148,6 +148,9 @@ ol[id^="item"] > li{
 #popup > p:last-child:hover{
     cursor: grab;
 }
+.co:hover{
+    color:black;
+}
 
 
 

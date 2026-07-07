@@ -1,1 +1,70 @@
         @import url(Res.css);
+
+        @media (max-width: 800px) { 
+    body {
+         display: block; 
+         width: 100%; 
+         text-align: center; 
+         text-align: center;
+        }
+    header{
+
+        text-align: center;
+    }
+}
+
+        a{
+            display: block;
+            font-size: 2em;
+        }
+        
+        table{
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        background-color: honeydew ;
+        color: green;
+        width: 50%;
+        margin:auto;
+        }
+
+        th,td{
+        border: 1px solid black;
+        text-align: center;
+        font-size: 1.3em;
+        }
+        
+        th{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: black;
+            padding-top: 1em;
+        }
+
+        tr:not(:first-of-type):hover {
+            background-color: antiquewhite ;
+            color: brown;
+        }
+        input{
+            display: block;
+            margin: auto;
+            width: 300px;
+        }
+        #comment{
+            height: 100px;
+        }
+        button{
+            margin-top: 4px;
+        }
+        .review{
+            margin-top: 2em;
+            font-size: 2em;
+        }
+        section{
+            text-align: center;
+        }
+
