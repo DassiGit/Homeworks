@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        display: grid;
+        grid-template-columns: repeat(6, 150px);
+        justify-content: space-evenly;
+        }
+        
+        nav{
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        grid-template-areas: 
+        'dot1 dot2 dot3'
+        'dot4 dot5 dot6'
+        'dot7 dot8 dot9';
+         }
+
+         span{
+            font-size: 40px;
+         }
+
+
+        nav:nth-child(1){
+            grid-column: 1;
+
+            span{
+                grid-area: dot5;
+            }
+        }
+
+       
+        
+        nav:nth-child(2){
+            grid-column: 2;
+
+            span:nth-child(1){
+                grid-area: dot1;
+            }
+
+             span:nth-child(2){
+                grid-area: dot9;
+            }
+
+        }
+
+        nav:nth-child(3){
+            grid-column: 3;
+
+            span:nth-child(1){
+                grid-area: dot1;
+            }
+
+             span:nth-child(2){
+                grid-area: dot9;
+            }
+
+            span:nth-child(3){
+                grid-area: dot5;
+            }
+
+        }
+        
+        nav:nth-child(4){
+            grid-column: 4;
+
+            span:nth-child(1){
+                grid-area: dot1;
+            }
+
+             span:nth-child(2){
+                grid-area: dot9;
+            }
+
+            span:nth-child(3){
+                grid-area: dot7;
+            }
+
+            span:nth-child(4){
+                grid-area: dot3;
+            }
+
+        }
+
+        nav:nth-child(5){
+            grid-column: 5;
+
+            span:nth-child(1){
+                grid-area: dot1;
+            }
+
+             span:nth-child(2){
+                grid-area: dot9;
+            }
+
+            span:nth-child(3){
+                grid-area: dot7;
+            }
+
+            span:nth-child(4){
+                grid-area: dot3;
+            }
+
+            span:nth-child(5){
+                grid-area: dot5;
+            }
+
+        }
+        
+         nav:nth-child(6){
+            grid-column: 6;
+
+            span:nth-child(1){
+                grid-area: dot1;
+            }
+
+             span:nth-child(2){
+                grid-area: dot9;
+            }
+
+            span:nth-child(3){
+                grid-area: dot7;
+            }
+
+            span:nth-child(4){
+                grid-area: dot3;
+            }
+
+            span:nth-child(5){
+                grid-area: dot4;
+            }
+
+            span:nth-child(6){
+                grid-area: dot6;
+            }
+
+        }
+
+
+        nav:hover{
+            rotate: 180deg;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+
+<nav><span>●</span></nav>
+<nav><span>●</span>
+<span>●</span></nav>
+<nav>
+    <span>●</span>
+    <span>●</span>
+  <span>●</span>
+</nav>
+<nav>
+      <span>●</span>
+        <span>●</span>
+          <span>●</span>
+            <span>●</span>
+</nav>
+<nav>
+      <span>●</span>
+        <span>●</span>
+          <span>●</span>
+            <span>●</span>
+              <span>●</span>
+</nav>
+<nav>
+      <span>●</span>
+        <span>●</span>
+          <span>●</span>
+            <span>●</span>
+              <span>●</span>
+                <span>●</span>
+</nav>
+
+</body>
+</html>
