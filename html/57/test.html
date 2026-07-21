@@ -9,8 +9,8 @@
 <body>
     <nav class="navbar">
         <ul>
-        <li><a href="">Products</a></li>
-        <li><a href="">Sign Up</a></li>
+        <li><a href="#prod">Products</a></li>
+        <li><a href="#signup">Sign Up</a></li>
         <li><a href="">Financials</a></li>
         <li><a href="">About Us</a></li>
         </ul>
@@ -20,7 +20,36 @@
         <h1>ESTUFF</h1>
         <h2>A <em>PCS</em> Company</h2>
     </header>
+    <section id="prod">
+        <h3>Products</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae et nesciunt debitis itaque dolorem deserunt, quisquam dolor. At ducimus dolore error impedit deserunt provident expedita.</p>
+        <div class="grid">
+            <ul>
+                <li>Computers</li>
+                <li><img src="images/macworld.jpg" alt="computer image"></li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum mollitia, officia quod a esse saepe. Itaque ducimus nostrum magni maiores distinctio dicta. Odio nisi consequatur sed, quidem voluptates sunt quaerat!</li>
+            </ul>
+            
+              <ul>
+                <li>Choirs</li>
+                <li><video src="images/short_video_panning_the_inside_of_an_empty_cozy_homey_jerusalem_cafe_seed2939600322.mp4" poster="images/shira.png" controls ></video></li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum mollitia, officia quod a esse saepe. Itaque ducimus nostrum magni maiores distinctio dicta. Odio nisi consequatur sed, quidem voluptates sunt quaerat!</li>
+            </ul>
+            
+              <ul>
+                <li>Candy</li>
+                <li><img src="images/candy.png" alt="candy image"></li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum mollitia, officia quod a esse saepe. Itaque ducimus nostrum magni maiores distinctio dicta. Odio nisi consequatur sed, quidem voluptates sunt quaerat!</li>
+            </ul>
+        </div>
+    </section>
+     <form class="signup" id="signup" method="post">
+        <h3>Sign Me Up!</h3>
+        <label for="name">Name: <input id="name" type="text" name="name" placeholder="Your Name" required></label>
+        <label for="email">Email: <input id="email" type="email" name="email" placeholder="Your Email" required></label>
+        <button>Sign Me Up!</button>
+     </form>
     </article>
-    <footer class="navbar"><ul>&copy; Copyright 2025 PCS</ul></footer>
+    <footer class="navbar botnav"><ul>&copy; PCS 2026</ul></footer>
 </body>
 </html>

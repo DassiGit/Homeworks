@@ -3,11 +3,14 @@ body{
      box-sizing: border-box;
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
 }
 
 .main{
     width: 80%;
     margin: auto;
+    padding: 2.6em;
+
 }
 
 .navbar{
@@ -15,8 +18,11 @@ body{
         color: white;
         width: 100%;
         border: 1px solid black;
-        
+        position: fixed;
+}
 
+.botnav{
+    bottom: 0;
 }
 
 nav ul {
@@ -39,6 +45,11 @@ nav ul li{
     font-size: .9em;
     }
    
+}
+
+nav ul li a:hover{
+    color:red;
+    text-decoration: underline;
 }
 
 footer ul{
@@ -68,3 +79,93 @@ header{
             margin-bottom: 2em;
         }
 }
+
+h3{
+   font-weight: bold; 
+}
+#prod{
+    margin-bottom: 2em;
+}
+#prod p{
+    font-size: .8em;
+}
+
+.grid{
+    display: grid;
+    gap: .7em;
+
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid img, video{
+    width: 100%;
+    height: auto;
+}
+
+.grid ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.grid ul:nth-child(1){
+
+      border-right:  2px solid rgb(212, 210, 210);
+      padding-right: .7em;
+}
+.grid ul:nth-child(2){
+
+      border-right:  2px solid rgb(212, 210, 210);
+      padding-right: .7em;
+      
+}
+.grid ul:nth-child(3){
+
+      padding-right: .7em;
+      
+}
+.grid ul li:nth-child(1){
+     text-align: center;
+     padding-bottom: 1em;
+     font-weight: bold;
+}
+
+.grid ul li:nth-child(3){
+     text-align: left;
+     font-size: .8em;
+}
+
+@media screen and (width < 800px){
+    .grid{
+        display: block;
+    }
+
+    .grid ul:nth-child(1),
+    .grid ul:nth-child(2),
+    .grid ul:nth-child(3){
+                    border: none;
+                    padding: 0;
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+    }
+}
+
+.signup{
+    background-color: rgb(212, 210, 210);
+    padding: 1em;
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.signup input{
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px ;
+}
+.signup button{
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px;
+}
+
