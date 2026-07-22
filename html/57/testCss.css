@@ -3,7 +3,6 @@ body{
      box-sizing: border-box;
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
 }
 
 .main{
@@ -167,5 +166,21 @@ h3{
     border: 1px solid rgb(212, 210, 210);
     border-radius: 4px;
     box-shadow: 1px 1px 2px;
+}
+
+@media screen and (width < 1000px) {
+    .signup label{
+        display: block;
+    }
+
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+     border: 2px solid black;
 }
 
