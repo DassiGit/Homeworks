@@ -39,3 +39,62 @@ console.log(multiplyByFive(2));
 
 const multiplyBySix = getBMultiply(6);
 console.log(multiplyBySix(2));
+
+//////////
+
+const letters= ['a', 'b', 'C', 'D', 'e'];
+
+function isEvery(array, callback){
+
+    for(let i = 0; i < array.length; i++){
+        if(!callback(array[i])){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
+console.log(isEvery(letters, function(letr){
+    if(letr === letr.toUpperCase());
+}));
+
+console.log(isEvery(letters, function(letr){
+    if(letr !== letr.toUpperCase());
+}));
+
+function upper(letr){
+    return letr === letr.toUpperCase();
+};
+
+function lower(letr){
+    return letr !== letr.toUpperCase();
+};
+
+console.log(letters.every(upper));
+console.log(letters.every(lower));
+
+
+/////////////
+
+function isSome(array, callback){
+
+    for(let i = 0; i < array.length; i++){
+        if(callback(array[i])){
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(isSome(letters, function(letr){
+    return letr === letr.toUpperCase();
+}));
+
+console.log(isSome(letters, function(letr){
+    return letr !== letr.toUpperCase();
+}));
+
+console.log(letters.some(upper));
+console.log(letters.some(lower));
