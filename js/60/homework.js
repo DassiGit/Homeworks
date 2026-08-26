@@ -37,7 +37,7 @@ pat1.print();
 /////////////////
 function trackDosage(medName, InitDos){
     let dosage = InitDos;
-    let medtn = medName;
+    const medtn = medName;
 
     function getInstructions(){
             return (`${dosage} mg of ${medtn}`);
@@ -45,7 +45,7 @@ function trackDosage(medName, InitDos){
     };
 
     function adjustDosage(pin, newDos){
-        let p = 9940;
+        const p = 9940;
         if( pin === p && newDos > 0){
                   dosage = newDos;
         }
