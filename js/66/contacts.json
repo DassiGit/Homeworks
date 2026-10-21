@@ -1,0 +1,20 @@
+[
+  {
+    "first": "Yitzchok",
+    "last": "Gray",
+    "email": "GraytApps@example.com",
+    "phone": "122244455"
+  },
+  {
+    "first": "Mommy",
+    "last": "Zucker",
+    "email": "Bestmom@example.com",
+    "phone": "987654321"
+  },
+  {
+    "first": "Tatty",
+    "last": "Zucker",
+    "email": "BestDad@example.com",
+    "phone": "98776644"
+  }
+]

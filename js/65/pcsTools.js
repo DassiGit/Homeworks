@@ -54,26 +54,7 @@ function getRandomColor(){
 function getColorPart(){
     return Math.floor(Math.random() * 256);
 }}
-/*
-const pcsTools = {
-  getElement,
-  /*setCss,
-  getCss,* /
-  css: function (element, property, value) {
-    console.log(arguments);
 
-    if (arguments.length < 3) {
-      return getCss(element, property);
-    } else {
-      setCss(element, property, value);
-    }
-  },
-  on,
-  click
-};
-
-export default pcsTools;
-*/
 
 export default function (selector) {
   const element = getElement(selector);
