@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #fff8f0;
+        margin: 30px;
+    }
+
+    #recipeSelect {
+        font-size: 18px;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    #recipeDisplay {
+        text-align: center;
+    }
+
+    #recipeDisplay h2 {
+        font-size: 36px;
+        color: #9b4d32;
+    }
+
+    #recipeDisplay img {
+        width: 350px;
+        max-width: 90%;
+        height: auto;
+        border-radius: 12px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    #recipeDisplay h3 {
+        font-size: 24px;
+        color: #9b4d32;
+    }
+
+    #recipeDisplay ul {
+        display: inline-block;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    #recipeDisplay p {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+    <h1>Dassi's Homework Recipes</h1>
+    <select id="recipeSelect">
+    <option value="">Choose a recipe...</option>
+    </select>
+    <div id="recipeDisplay"></div>
+    <script src="recipes.js" type="module"></script>
+</body>
+</html>
