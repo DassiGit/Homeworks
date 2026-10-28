@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        html, body, #map{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        }
+          #input {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    #input p {
+        margin-top: 0;
+    }
+
+    #input input {
+        padding: 8px;
+        margin-right: 5px;
+    }
+
+    #input button {
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+    #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    display: none;
+}
+
+#resultsList {
+    list-style: none;
+    padding: 0;
+}
+
+#resultsList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#resultsList li:hover {
+    background-color: #f0f0f0;
+}
+
+#sidebarSearch {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+#sidebarSearch input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+#sidebarSearch button {
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div id="input">
+    <p >Search for a place you'd like to learn about!</p>
+    <input type="text" id="searchTerm" >
+    <button id="searButton">Search</button>
+    </div>
+    <div id="map"></div>
+    <div id="sidebar">
+    <h2>Search Results</h2>
+
+    <ul id="resultsList">
+    </ul>
+    <p id="errorMessage"></p>
+
+    <div id="sidebarSearch">
+        <input type="text" id="sidebarSearchTerm" placeholder="Search for another place...">
+        <button id="sidebarSearchButton">Search</button>
+</div>
+       <script>
+  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+    key: "AIzaSyB1VgZcec-b9S_FfuOVDSdiX9UcV_JuQI0",
+    v: "weekly",
+  });
+</script>
+    <script src="map.js" type="module"></script>
+</body>
+</html>
