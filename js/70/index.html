@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #gamePieces img{
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-        }
-        #gameArea{
-            position: relative;
-            width: 300px;
-            height: 400px;
-  
-        }
-        #gameArea img{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-            }
-    </style>
+    <title>Mr. Potato Head</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div id="gameArea">
-    <img src="images/potato.png" alt="a mr. potato body">
+
+    <h1>Mr. Potato Head!</h1>
+
+    <button id="resetButton">Start Over</button>
+
+    <div id="gameArea">
+        <img class="potato" src="images/potato.png" alt="Mr. Potato Head">
     </div>
-    <div id="gamePieces"> 
-        <img src="images/BigSmile.png" alt="big smile">  
+
+
+    <h3>Choose your pieces!</h3>
+
+    <div id="gamePieces">
+        <img src="images/BigSmile.png" alt="big smile">
         <img src="images/Glossy Pink Toy Ears.png" alt="pink ears">
-        <img src="images/musMan.png" alt="mustacheman">
+        <img src="images/musMan.png" alt="mustache">
         <img src="images/purEyes.png" alt="purple eyes">
         <img src="images/redLips.png" alt="red lips">
         <img src="images/redNose.png" alt="red nose">
     </div>
+
+    <h3>Music</h3>
+    <audio controls loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="game.js" type="module"></script>
 </body>
 </html>
